@@ -16,33 +16,7 @@ ConSite operates through three synergistic modules:
 
 Together, these modules formulate active site prediction as **context-aware functional semantic alignment**, enabling ConSite to handle class imbalance, few-shot scenarios, and distant homologs.
 
----
 
-## Results
-
-### Comparison with State-of-the-Art Methods
-
-| Task | Metric | Squidly | AEGAN | SCREEN | EasIFA | **ConSite** |
-|---|---|---|---|---|---|---|
-| **Multi-class** | Binding Precision ↑ | 0.4904 | 0.7338 | 0.7726 | 0.8199 | **0.8342** |
-| | Binding Recall ↑ | 0.5174 | 0.7314 | 0.7655 | 0.7901 | **0.8045** |
-| | Catalytic Precision ↑ | 0.2207 | 0.4540 | 0.4912 | 0.5226 | **0.5444** |
-| | Catalytic Recall ↑ | 0.4268 | 0.5086 | 0.5216 | 0.5356 | **0.5421** |
-| | MCC ↑ | 0.5128 | 0.8102 | 0.8576 | 0.9033 | **0.9220** |
-| **Binary** | Precision ↑ | 0.4505 | 0.8518 | 0.8711 | 0.9240 | **0.9526** |
-| | Recall ↑ | 0.8576 | 0.9084 | 0.9108 | 0.9183 | **0.9204** |
-| | AUC ↑ | 0.9569 | 0.9824 | 0.9836 | 0.9857 | **0.9901** |
-| | MCC ↑ | 0.5716 | 0.8543 | 0.8679 | 0.9082 | **0.9224** |
-
-### Ablation Study
-
-| Variant | Binding P | Binding R | Catalytic P | Catalytic R | MCC |
-|---|---|---|---|---|---|
-| w/o Structure | 0.8004 | 0.8095 | 0.5388 | 0.5388 | 0.9044 |
-| w/o FCI | 0.8160 | 0.7978 | 0.5453 | 0.5435 | 0.9117 |
-| w/o HPA | 0.8101 | 0.7976 | 0.5387 | 0.5352 | 0.9035 |
-| w/o UHF | 0.8328 | 0.8015 | 0.5440 | 0.5469 | 0.9189 |
-| **ConSite** | **0.8342** | **0.8045** | **0.5444** | **0.5421** | **0.9220** |
 
 ---
 
